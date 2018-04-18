@@ -12,7 +12,7 @@ Name:  Julie Kim
 
 Andrew ID:  juliek1
 
-Collaborated with:  
+Collaborated with:  NA
 
 This lab is to be done in class (completed outside of class if need
 be). You can collaborate with your classmates, but you must identify
@@ -26,6 +26,7 @@ HTML file on Canvas, by Thursday 10pm, this week.
 
 *If you have not installed and configured <tt>Git</tt>, you should do
  that before proceeding.*
+
 
 Setup
 ===
@@ -58,11 +59,11 @@ readLines("https://raw.githubusercontent.com/jupiek/36-350/master/README.md")
     paste that URL below in the call to <tt>source_url()</tt>. If
     everything works, "Hello, world!" should appear.
 
-    ```{r}
-    #install.packages("devtools")  # uncomment this if you need to install devtools
+    ```{r, warning = FALSE, message = FALSE}
     library(devtools)
-    #source_url("Enter the URL to hello_world.R Here")
+    source_url("https://raw.githubusercontent.com/jupiek/36-350/master/hello_world.R")
     ```
+
 
 Git in Practice
 ===
@@ -86,7 +87,7 @@ hash. Alternatively you can just copy and paste the commit's hash into
     which is a vector of length n of draws from the standard normal.
 
 ```{r}
-# readLines("Enter the URL to relevant commit of lab_12_simulation.R")
+readLines("https://github.com/jupiek/36-350/commit/0c5dcc6278c3d591116018e03ce12f73db27f48c.patch")
 ```
 
 - **2b.** Write a function `model_select(covariates, responses,
@@ -100,7 +101,7 @@ hash. Alternatively you can just copy and paste the commit's hash into
     only the first two covariates.
 
 ```{r}
-# readLines("Enter the URL to relevant commit of lab_12_simulation.R")
+readLines("https://github.com/jupiek/36-350/commit/60304c98e2dd45d5999d904c7ddd73d943ffc333.patch")
 ```
 
 - **2c.** Write a function `run_simulation(n_trials, n, p, cutoff)`
@@ -114,7 +115,7 @@ hash. Alternatively you can just copy and paste the commit's hash into
     10000)`, `p = 10, 20, 50` and set `cutoff = 0.05`.
 
 ```{r}
-# readLines("Enter the URL to relevant commit of lab_12_simulation.R")
+readLines("https://github.com/jupiek/36-350/commit/26b0c4f189518317855dd85b8e1594b512b64a4e.patch")
 ```
 
 - **2d.** One problem with simulations is that they can take a long
@@ -126,7 +127,7 @@ hash. Alternatively you can just copy and paste the commit's hash into
     `datapath` and makes the plot.
 
 ```{r}
-# readLines("Enter the URL to relevant commit of lab_12_simulation.R")
+readLines("https://github.com/jupiek/36-350/commit/224312dbc61b74bfdaca3cfec8718cbea11818d7.patch")
 ```
 
 - **CHALLENGE** One potential solution to this problem of invalid
