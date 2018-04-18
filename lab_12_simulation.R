@@ -26,8 +26,7 @@ run_simulation = function(n_trials, n, p, cutoff) {
         vals[length(vals) + i] = pvals[i]
     }
   }
-  if (length(vals) == 0) return(vals)
-  return(hist(vals))
+  save(vals, file = "datapath.text")
 }
 
 run_simulation(1, 100, 10, 0.05)
@@ -39,3 +38,8 @@ run_simulation(1, 10000, 20, 0.05)
 run_simulation(1, 100, 50, 0.05)
 run_simulation(1, 1000, 50, 0.05)
 run_simulation(1, 10000, 50, 0.05)
+
+make_plot = function(datapath) {
+  load(datapath)
+  return(hist(vals))
+}
